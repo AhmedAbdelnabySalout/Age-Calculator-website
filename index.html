@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "UTF-8"/>
+		<meta name = "viewport" content = "width=device-width, initial-scale=0.7"/>
+		<title>Age Calculator</title>
+		
+		<link rel = "stylesheet" href = "css/styles.css"
+		
+	</head>
+	
+	<body>
+		<h1 style = "display:inline; margin-bottom:20px; border:none; background-color:lightskyblue; padding: 8px; border-radius: 8px">Hey, I'm Ahmed Salout</h1>
+		<p style = "font-size: 21pt; color: green;">I've created this web page to help you calculate your age in a simple way.</p>
+		
+		<div class = "age_frame" id = "age_frame_ID">
+			
+			<h1 class = "age_frame_header">Age Calculator</h1>
+			
+			<select id = "month_select_ID" onchange = "monthOnchangeEvent()" class = "select">
+			</select>
+			
+			<select id = "day_select_ID" onchange = "dayOnchangeEvent()" class = "select">
+			</select>
+			
+			<select id = "year_select_ID" onchange = "yearOnchangeEvent()" class = "select">
+			</select>
+			
+			<button type="button" class = "calc_button" onclick = "calc()">Calculate</button>
+			
+			<div id = "resultFrame" class = "resultFrame">
+			    <p id = "result" style = "margin-top:10px; padding: 20px;"></p>
+			</div>
+			
+		</div>
+		
+		<script type = "text/JavaScript" src = "./js/main.js">
+		</script>
+		
+	</body>
+
+</html>
